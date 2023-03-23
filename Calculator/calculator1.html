@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 1</title>
+    <script src="calculator.js"></script>
+    <style>
+        h3 {
+            font-size: 50px;
+            color: red;
+            text-align: center;
+        }
+        form {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+        }
+        input {
+            background-color: white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h3>JavScript Calculator</h3>
+    <form name="calc">
+    <table cellspacing="1" cellpadding="2" border="2">
+      <tr>
+        <td colspan="5">
+            <input name="display" size="35" length="27"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <input type="button" value="clear" onClick="this.form.display.value=0">
+        </td>
+        <td colspan="3">
+            <input type="button" value="delete" onClick="delChar(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="=" onClick="equal(this.form.display)">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <input type="button" value="exp" onClick="exp(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="7" onClick="addChar(this.form.display,'7')">
+        </td>
+        <td>
+            <input type="button" value="8" onClick="addChar(this.form.display,'8')">
+        </td>
+        <td>
+            <input type="button" value="9" onClick="addChar(this.form.display,'9')">
+        </td>
+        <td>
+            <input type="button" value="/" onClick="addChar(this.form.display,'/')">
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <input type="button" value="ln" onClick="ln(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="4" onClick="addChar(this.form.display,'4')">
+        </td>
+        <td>
+            <input type="button" value="5" onClick="addChar(this.form.display,'5')">
+        </td>
+        <td>
+            <input type="button" value="6" onClick="addChar(this.form.display,'6')">
+        </td>
+        <td>
+            <input type="button" value="*" onClick="addChar(this.form.display,'*')">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <input type="button" value="sqrt" onClick="sqrt(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="1" onClick="addChar(this.form.display,'1')">
+        </td>
+        <td>
+            <input type="button" value="2" onClick="addChar(this.form.display,'2')">
+        </td>
+        <td>
+            <input type="button" value="3" onClick="addChar(this.form.display,'3')">
+        </td>
+        <td>
+            <input type="button" value="-" onClick="addChar(this.form.display,'-')">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <input type="button" value="sq" onClick="sq(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="0" onClick="addChar(this.form.display,'0')">
+        </td>
+        <td>
+            <input type="button" value="." onClick="addChar(this.form.display,'.')">
+        </td>
+        <td>
+            <input type="button" value="+/-" onClick="change(this.form.display)">
+        </td>
+        <td>
+            <input type="button" value="+" onClick="addChar(this.form.display,'+')">
+        </td>
+      </tr>
+      <tr>
+      <td>
+        <input type="button" value="(" onClick="addChar(this.form.display,'(')">
+    </td>
+    <td>
+        <input type="button" value="cos" onClick="cos(this.form.display)">
+    </td>
+    <td>
+        <input type="button" value="sin" onClick="sin(this.form.display)">
+    </td>
+    <td>
+        <input type="button" value="tan" onClick="tan(this.form.display)">
+    </td>
+    <td>
+        <input type="button" value=")" onClick="addChar(this.form.display,')'">
+    </td>
+
+</tr>
+    </table>
+    </form>
+
+</body>
+</html>
